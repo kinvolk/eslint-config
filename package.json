@@ -1,0 +1,46 @@
+{
+  "name": "@kinvolk/eslint-config",
+  "version": "0.1.0",
+  "description": "Lint rules for all Kinvolk's Js/Ts projects",
+  "main": "index.js",
+  "scripts": {
+    "create": "node ./export.js > ./index.js && eslint ./index.js --fix",
+    "lint": "eslint ./export.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kinvolk/eslint-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "kinvolk"
+  ],
+  "author": "Joaquim Rocha <joaquim@kinvolk.io>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/kinvolk/eslint-config/issues"
+  },
+  "homepage": "https://github.com/kinvolk/eslint-config#readme",
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.1.0",
+    "eslint": "^7.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "eslint-plugin-simple-import-sort": "^5.0.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "eslint-plugin-simple-import-sort": "^5.0.3",
+    "yaml": "^1.10.0"
+  },
+  "dependencies": {
+    "@typescript-eslint/parser": "^3.1.0",
+    "eslint": "^7.1.0",
+    "typescript": "^3.9.3"
+  }
+}
