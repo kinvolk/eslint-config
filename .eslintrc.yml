@@ -18,6 +18,8 @@ plugins:
 - simple-import-sort
 - '@typescript-eslint/eslint-plugin'
 rules:
+  key-spacing:
+  - 1
   arrow-spacing:
   - 1
   eqeqeq:
