@@ -4,3 +4,6 @@ all:
 
 lint:
 	npm run lint
+
+publish:
+	npm publish
