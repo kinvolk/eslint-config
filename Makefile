@@ -1,4 +1,5 @@
 all:
+	npm install
 	npm run create
 
 lint:
