@@ -1,11 +1,17 @@
 {
   "name": "@kinvolk/eslint-config",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Lint rules for all Kinvolk's Js/Ts projects",
   "main": "index.js",
+  "files": [
+    "prettier-config",
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
     "create": "node ./export.js > ./index.js && eslint ./index.js --fix",
-    "lint": "eslint ./export.js"
+    "lint": "eslint ./export.js prettier-config/index.js"
   },
   "repository": {
     "type": "git",
@@ -14,6 +20,7 @@
   "keywords": [
     "eslint",
     "eslintconfig",
+    "prettierconfig",
     "kinvolk"
   ],
   "author": "Joaquim Rocha <joaquim@kinvolk.io>",
@@ -24,6 +31,7 @@
   "homepage": "https://github.com/kinvolk/eslint-config#readme",
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.1.0",
+    "eslint-config-prettier": "^7.2.0",
     "eslint": "^7.1.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-react": "^7.20.0",
@@ -32,6 +40,7 @@
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.1.0",
+    "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.4",
