@@ -14,17 +14,18 @@ our Javascript/Typescript projects.
 
 Install the config from NPM by using the following command:
 
-`npm install --save-dev @kinvolk/eslint-config`
+`npm install --save-dev @kinvolk/eslint-config eslint-config-prettier`
 
 Install also the peer dependencies NPM suggested (if they're not installed
 automatically).
 
-Then, create an eslint config file with that extends the Kinvolk's one. If you
-prefer YAML, like we do, then create `.eslintrc.yml` with the following
-contents:
+You can include it in your `package.json` file like the following:
 
-```YAML
-extends: '@kinvolk'
+```js
+  "eslintConfig": {
+    "extends": ["@kinvolk", "prettier", "prettier/react"]
+  },
+  "prettier": "@kinvolk/eslint-config/prettier-config",
 ```
 
 ## Development
