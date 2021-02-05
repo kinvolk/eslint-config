@@ -133,7 +133,7 @@ rules:
   - always
   sort-imports:
   - 0
-  simple-import-sort/sort:
+  simple-import-sort/imports:
   - 1
   - groups:
     - - "^\\u0000"
