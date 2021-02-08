@@ -1,6 +1,6 @@
 {
   "name": "@kinvolk/eslint-config",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Lint rules for all Kinvolk's Js/Ts projects",
   "main": "index.js",
   "files": [
